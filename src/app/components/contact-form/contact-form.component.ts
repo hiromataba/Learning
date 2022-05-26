@@ -11,11 +11,11 @@ export class ContactFormComponent implements OnInit {
   };
 
   onSubmit(firstName: any, comment: any) {
-    firstName.reset();
-    comment.reset();
     console.log(
       `Welcome ${firstName.value}! Your comment is: ${comment.value}`
     );
+    firstName.reset();
+    comment.reset();
   }
 
   constructor() {}
