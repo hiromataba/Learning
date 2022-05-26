@@ -6,9 +6,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { StudentsComponent } from './components/students/students.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
 
 @NgModule({
-  declarations: [AppComponent, ContactFormComponent, StudentsComponent, NavbarComponent],
+  declarations: [AppComponent, ContactFormComponent, StudentsComponent, NavbarComponent, HomepageComponent],
   imports: [BrowserModule,FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
