@@ -7,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactFormComponent implements OnInit {
   onFirstNameChange = (event: any) => {
-    console.log(event.value);
+    console.log(event.control);
   };
+
+  onSubmit(firstName: any, comment: any) {
+    firstName.reset();
+    comment.reset();
+    console.log(
+      `Welcome ${firstName.value}! Your comment is: ${comment.value}`
+    );
+  }
 
   constructor() {}
 

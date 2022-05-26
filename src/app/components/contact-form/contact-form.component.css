@@ -1,1 +1,7 @@
-form .btn{margin-top:10px}
+form .btn {
+    margin-top: 10px;
+}
+
+form .form-control {
+    margin: 10px 0;
+}

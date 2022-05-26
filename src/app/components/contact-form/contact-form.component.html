@@ -1,13 +1,16 @@
-<form class="form">
+<form class="form" (submit)="onSubmit(firstName, comment)">
     <h4 class="text-center text-primary">Contact Us</h4>
     <div class="form-group">
         <label for="firstName" class="">Firt Name</label>
-        <input type="text" id="firstName" #firstName (keyup)="onFirstNameChange(firstName)" class="form-control" />
+        <input required ngModel type="text" name="firstName" id="firstName" #firstName="ngModel" (change)="onFirstNameChange(firstName)" class="form-control" />
+        <div *ngIf="firstName.touched && !firstName.valid" class="alert alert-danger">
+            First Name required
+        </div>
     </div>
 
     <div class="form-group">
         <label for="comment" class="">Comment</label>
-        <textarea name="comment" id="comment" cols="30" rows="10" class="form-control"></textarea>
+        <textarea required ngModel name="comment" id="comment" #comment="ngModel" cols="30" rows="10" class="form-control"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
