@@ -7,9 +7,10 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { StudentsComponent } from './components/students/students.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 
 @NgModule({
-  declarations: [AppComponent, ContactFormComponent, StudentsComponent, NavbarComponent, HomepageComponent],
+  declarations: [AppComponent, ContactFormComponent, StudentsComponent, NavbarComponent, HomepageComponent, ReactiveFormComponent],
   imports: [BrowserModule,FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
